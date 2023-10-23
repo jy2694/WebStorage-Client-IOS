@@ -14,6 +14,13 @@
 		BF68E57D2AE60A70007DE7F7 /* WebStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E57C2AE60A70007DE7F7 /* WebStorageTests.swift */; };
 		BF68E5872AE60A70007DE7F7 /* WebStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5862AE60A70007DE7F7 /* WebStorageUITests.swift */; };
 		BF68E5892AE60A70007DE7F7 /* WebStorageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5882AE60A70007DE7F7 /* WebStorageUITestsLaunchTests.swift */; };
+		BF68E5972AE60AE2007DE7F7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5962AE60AE2007DE7F7 /* LoginView.swift */; };
+		BF68E59A2AE60E0B007DE7F7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5992AE60E0B007DE7F7 /* ColorExtension.swift */; };
+		BF68E59D2AE61302007DE7F7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E59C2AE61302007DE7F7 /* HTTPClient.swift */; };
+		BF68E59F2AE62DA3007DE7F7 /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E59E2AE62DA3007DE7F7 /* UserDefaultsWrapper.swift */; };
+		BF68E5A22AE62E4B007DE7F7 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5A12AE62E4B007DE7F7 /* UserDefaultsManager.swift */; };
+		BF68E5A42AE62E83007DE7F7 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5A32AE62E83007DE7F7 /* UserData.swift */; };
+		BF68E5A62AE63517007DE7F7 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF68E5A52AE63517007DE7F7 /* FileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		BF68E5822AE60A70007DE7F7 /* WebStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF68E5862AE60A70007DE7F7 /* WebStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStorageUITests.swift; sourceTree = "<group>"; };
 		BF68E5882AE60A70007DE7F7 /* WebStorageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebStorageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF68E5962AE60AE2007DE7F7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		BF68E5992AE60E0B007DE7F7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BF68E59C2AE61302007DE7F7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		BF68E59E2AE62DA3007DE7F7 /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		BF68E5A12AE62E4B007DE7F7 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		BF68E5A32AE62E83007DE7F7 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		BF68E5A52AE63517007DE7F7 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,10 @@
 		BF68E56A2AE60A6E007DE7F7 /* WebStorage */ = {
 			isa = PBXGroup;
 			children = (
+				BF68E5A02AE62E27007DE7F7 /* Storage */,
+				BF68E59B2AE612F7007DE7F7 /* HTTP */,
+				BF68E5982AE60DFC007DE7F7 /* Extensions */,
+				BF68E5952AE60ACE007DE7F7 /* Views */,
 				BF68E56B2AE60A6E007DE7F7 /* WebStorageApp.swift */,
 				BF68E56D2AE60A6E007DE7F7 /* ContentView.swift */,
 				BF68E56F2AE60A70007DE7F7 /* Assets.xcassets */,
@@ -125,6 +143,41 @@
 				BF68E5882AE60A70007DE7F7 /* WebStorageUITestsLaunchTests.swift */,
 			);
 			path = WebStorageUITests;
+			sourceTree = "<group>";
+		};
+		BF68E5952AE60ACE007DE7F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF68E5962AE60AE2007DE7F7 /* LoginView.swift */,
+				BF68E5A52AE63517007DE7F7 /* FileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF68E5982AE60DFC007DE7F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF68E5992AE60E0B007DE7F7 /* ColorExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF68E59B2AE612F7007DE7F7 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				BF68E59C2AE61302007DE7F7 /* HTTPClient.swift */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		BF68E5A02AE62E27007DE7F7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				BF68E59E2AE62DA3007DE7F7 /* UserDefaultsWrapper.swift */,
+				BF68E5A12AE62E4B007DE7F7 /* UserDefaultsManager.swift */,
+				BF68E5A32AE62E83007DE7F7 /* UserData.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF68E5972AE60AE2007DE7F7 /* LoginView.swift in Sources */,
+				BF68E59D2AE61302007DE7F7 /* HTTPClient.swift in Sources */,
+				BF68E5A42AE62E83007DE7F7 /* UserData.swift in Sources */,
 				BF68E56E2AE60A6E007DE7F7 /* ContentView.swift in Sources */,
+				BF68E5A22AE62E4B007DE7F7 /* UserDefaultsManager.swift in Sources */,
 				BF68E56C2AE60A6E007DE7F7 /* WebStorageApp.swift in Sources */,
+				BF68E5A62AE63517007DE7F7 /* FileView.swift in Sources */,
+				BF68E59F2AE62DA3007DE7F7 /* UserDefaultsWrapper.swift in Sources */,
+				BF68E59A2AE60E0B007DE7F7 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,8 +482,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WebStorage/Preview Content\"";
+				DEVELOPMENT_TEAM = T9X3F2NH43;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "로그인을 위해 생체인증을 진행합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,8 +512,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WebStorage/Preview Content\"";
+				DEVELOPMENT_TEAM = T9X3F2NH43;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "로그인을 위해 생체인증을 진행합니다.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
